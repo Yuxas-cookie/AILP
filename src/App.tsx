@@ -1,4 +1,5 @@
 import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { Header } from './components/Header';
 import { Hero } from './components/Hero';
@@ -6,7 +7,7 @@ import { Services } from './components/Services';
 import { Features } from './components/Features';
 import { CTA } from './components/CTA';
 import { Pricing } from './components/Pricing';
-import { Footer } from './components/Footer';
+import { LegalPage } from './components/LegalPage';
 
 const fadeInUp = {
   initial: { opacity: 0, y: 20 },
@@ -14,7 +15,7 @@ const fadeInUp = {
   transition: { duration: 0.6 }
 };
 
-function App() {
+function HomePage() {
   return (
     <motion.div 
       className="min-h-screen bg-white"
@@ -22,7 +23,6 @@ function App() {
       animate={{ opacity: 1 }}
       transition={{ duration: 0.5 }}
     >
-      <Header />
       <motion.div {...fadeInUp}>
         <Hero />
       </motion.div>
@@ -50,13 +50,19 @@ function App() {
       >
         <CTA />
       </motion.div>
-      <motion.div 
-        {...fadeInUp}
-        transition={{ delay: 0.6 }}
-      >
-        <Footer />
-      </motion.div>
     </motion.div>
+  );
+}
+
+function App() {
+  return (
+    <Router>
+      <Header />
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/legal" element={<LegalPage />} />
+      </Routes>
+    </Router>
   );
 }
 
