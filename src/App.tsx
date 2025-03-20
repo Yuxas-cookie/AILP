@@ -6,6 +6,7 @@ import { Services } from './components/Services';
 import { Features } from './components/Features';
 import { CTA } from './components/CTA';
 import { Pricing } from './components/Pricing';
+import { Footer } from './components/Footer';
 
 const fadeInUp = {
   initial: { opacity: 0, y: 20 },
@@ -48,6 +49,12 @@ function App() {
         transition={{ delay: 0.5 }}
       >
         <CTA />
+      </motion.div>
+      <motion.div 
+        {...fadeInUp}
+        transition={{ delay: 0.6 }}
+      >
+        <Footer />
       </motion.div>
     </motion.div>
   );
