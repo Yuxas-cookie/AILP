@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { ChevronRight, Code2, Terminal, Braces, Database, Cloud, Cpu } from 'lucide-react';
+import { Code2, Terminal, Braces, Database, Cloud, Cpu } from 'lucide-react';
 
 export function Hero() {
   const [isVisible, setIsVisible] = useState(false);
@@ -173,23 +173,6 @@ class AIModel:
               実践的なAI開発スキルを<br className="hidden md:block" />
               最先端の環境で学ぶ
             </p>
-            
-            <div className="flex justify-center items-center animate-fade-in animation-delay-800">
-              <a
-                href="https://line.me/R/ti/p/@687dqxem"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="group relative flex items-center justify-center px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-lg overflow-hidden hover:scale-105 transition-all duration-300 font-mono"
-              >
-                <div className="absolute inset-0 bg-gradient-to-r from-white/0 via-white/20 to-white/0 -skew-x-45 animate-shine"></div>
-                <span className="relative flex items-center font-medium">
-                  講座説明会は
-                  <br />
-                  コチラの公式Lineから
-                  <ChevronRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
-                </span>
-              </a>
-            </div>
           </div>
         </div>
       </div>
