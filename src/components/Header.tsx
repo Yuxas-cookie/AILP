@@ -32,7 +32,7 @@ export function Header() {
         >
           <div className="absolute inset-0 bg-gradient-to-r from-white/0 via-white/20 to-white/0 -skew-x-45 animate-shine"></div>
           <span className="relative flex items-center font-medium">
-            公式ラインはコチラ
+            公式Lineはコチラから
             <ChevronRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
           </span>
         </motion.a>

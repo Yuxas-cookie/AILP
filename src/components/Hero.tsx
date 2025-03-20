@@ -183,7 +183,9 @@ class AIModel:
               >
                 <div className="absolute inset-0 bg-gradient-to-r from-white/0 via-white/20 to-white/0 -skew-x-45 animate-shine"></div>
                 <span className="relative flex items-center font-medium">
-                  公式ラインはコチラ
+                  講座説明会は
+                  <br />
+                  コチラの公式Lineから
                   <ChevronRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
                 </span>
               </a>

@@ -33,64 +33,65 @@ export function Footer() {
     >
       <div className="container mx-auto">
         <motion.div
-          className="grid md:grid-cols-4 gap-8"
-          variants={containerVariants}
-        >
-          <motion.div variants={itemVariants}>
-            <h5 className="font-bold text-gray-900 mb-4">bolt.new</h5>
-            <p className="text-gray-600 text-sm">
-              革新的なテクノロジーソリューションを提供し、
-              ビジネスの可能性を広げます。
-            </p>
-          </motion.div>
-          <motion.div variants={itemVariants}>
-            <h5 className="font-bold text-gray-900 mb-4">サービス</h5>
-            <ul className="space-y-2 text-gray-600">
-              <motion.li whileHover={{ x: 5 }} transition={{ duration: 0.2 }}>
-                <a href="#" className="hover:text-gray-900 transition-colors">AIエンジニア講座</a>
-              </motion.li>
-              <motion.li whileHover={{ x: 5 }} transition={{ duration: 0.2 }}>
-                <a href="#" className="hover:text-gray-900 transition-colors">AIクリエイティブ講座</a>
-              </motion.li>
-              <motion.li whileHover={{ x: 5 }} transition={{ duration: 0.2 }}>
-                <a href="#" className="hover:text-gray-900 transition-colors">カスタムソリューション</a>
-              </motion.li>
-            </ul>
-          </motion.div>
-          <motion.div variants={itemVariants}>
-            <h5 className="font-bold text-gray-900 mb-4">企業情報</h5>
-            <ul className="space-y-2 text-gray-600">
-              <motion.li whileHover={{ x: 5 }} transition={{ duration: 0.2 }}>
-                <a href="#" className="hover:text-gray-900 transition-colors">会社概要</a>
-              </motion.li>
-              <motion.li whileHover={{ x: 5 }} transition={{ duration: 0.2 }}>
-                <a href="#" className="hover:text-gray-900 transition-colors">採用情報</a>
-              </motion.li>
-              <motion.li whileHover={{ x: 5 }} transition={{ duration: 0.2 }}>
-                <a href="#" className="hover:text-gray-900 transition-colors">お知らせ</a>
-              </motion.li>
-            </ul>
-          </motion.div>
-          <motion.div variants={itemVariants}>
-            <h5 className="font-bold text-gray-900 mb-4">お問い合わせ</h5>
-            <ul className="space-y-2 text-gray-600">
-              <motion.li whileHover={{ x: 5 }} transition={{ duration: 0.2 }}>
-                <a href="#" className="hover:text-gray-900 transition-colors">資料請求</a>
-              </motion.li>
-              <motion.li whileHover={{ x: 5 }} transition={{ duration: 0.2 }}>
-                <a href="#" className="hover:text-gray-900 transition-colors">お問い合わせ</a>
-              </motion.li>
-              <motion.li whileHover={{ x: 5 }} transition={{ duration: 0.2 }}>
-                <a href="#" className="hover:text-gray-900 transition-colors">プライバシーポリシー</a>
-              </motion.li>
-            </ul>
-          </motion.div>
-        </motion.div>
-        <motion.div
-          className="mt-12 pt-8 border-t border-gray-200 text-center text-gray-600"
           variants={itemVariants}
+          className="mt-12 pt-8 border-t border-gray-200"
         >
-          <p>© 2025 bolt.new All Rights Reserved.</p>
+          <div className="grid md:grid-cols-2 gap-8">
+            <motion.div variants={itemVariants} className="text-sm text-gray-600">
+              <h6 className="font-bold text-gray-900 mb-4">特定商取引法に基づく表記</h6>
+              <table className="w-full">
+                <tbody className="space-y-2">
+                  <tr>
+                    <td className="py-2 pr-4 align-top font-medium">事業者名</td>
+                    <td className="py-2">株式会社SKH</td>
+                  </tr>
+                  <tr>
+                    <td className="py-2 pr-4 align-top font-medium">代表取締役</td>
+                    <td className="py-2">片山弘</td>
+                  </tr>
+                  <tr>
+                    <td className="py-2 pr-4 align-top font-medium">所在地</td>
+                    <td className="py-2">〒565-0842<br />大阪府吹田市千里山東２丁目４−３<br />リバーサイド千里山 201号室</td>
+                  </tr>
+                  <tr>
+                    <td className="py-2 pr-4 align-top font-medium">連絡先</td>
+                    <td className="py-2">sekaino.hiroshi34@gmail.com</td>
+                  </tr>
+                  <tr>
+                    <td className="py-2 pr-4 align-top font-medium">受付時間</td>
+                    <td className="py-2">公式ラインにて24時間受け付けております</td>
+                  </tr>
+                </tbody>
+              </table>
+            </motion.div>
+            <motion.div variants={itemVariants} className="text-sm text-gray-600">
+              <h6 className="font-bold text-gray-900 mb-4">サービスに関する表記</h6>
+              <table className="w-full">
+                <tbody className="space-y-2">
+                  <tr>
+                    <td className="py-2 pr-4 align-top font-medium">販売価格</td>
+                    <td className="py-2">77万円（税込）</td>
+                  </tr>
+                  <tr>
+                    <td className="py-2 pr-4 align-top font-medium">支払方法</td>
+                    <td className="py-2">銀行振込<br />クレジットカード決済</td>
+                  </tr>
+                  <tr>
+                    <td className="py-2 pr-4 align-top font-medium">サービス内容</td>
+                    <td className="py-2">AIエンジニア育成プログラム<br />（オンライン講座・実践会・個別サポート）</td>
+                  </tr>
+                  <tr>
+                    <td className="py-2 pr-4 align-top font-medium">提供期間</td>
+                    <td className="py-2">180日間</td>
+                  </tr>
+                  <tr>
+                    <td className="py-2 pr-4 align-top font-medium">返品・キャンセル</td>
+                    <td className="py-2">契約後8日以内のクーリングオフ期間あり</td>
+                  </tr>
+                </tbody>
+              </table>
+            </motion.div>
+          </div>
         </motion.div>
       </div>
     </motion.footer>

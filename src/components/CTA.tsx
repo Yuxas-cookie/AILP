@@ -45,7 +45,9 @@ export function CTA() {
           >
             <Send className="w-5 h-5" />
           </motion.div>
-          公式ラインはコチラ
+          講座説明会は
+          <br />
+          コチラの公式Lineから
         </motion.a>
       </motion.div>
     </section>
