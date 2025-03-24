@@ -3,6 +3,27 @@ import { motion } from 'framer-motion';
 import { Send } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
+const containerVariants = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.2
+    }
+  }
+};
+
+const itemVariants = {
+  hidden: { opacity: 0, y: 20 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 0.5
+    }
+  }
+};
+
 export function CTA() {
   return (
     <section className="py-20 px-4 bg-gradient-to-br from-blue-900 via-gray-900 to-purple-900 text-white">
@@ -56,13 +77,24 @@ export function CTA() {
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ delay: 0.8, duration: 0.6 }}
+            className="space-y-2"
           >
-            <Link 
-              to="/legal"
-              className="text-blue-300 hover:text-blue-200 transition-colors text-sm underline underline-offset-4"
-            >
-              特定商取引法に基づく表記
-            </Link>
+            <div>
+              <Link 
+                to="/legal"
+                className="text-blue-300 hover:text-blue-200 transition-colors text-sm underline underline-offset-4"
+              >
+                特定商取引法に基づく表記
+              </Link>
+            </div>
+            <div>
+              <Link 
+                to="/privacy"
+                className="text-blue-300 hover:text-blue-200 transition-colors text-sm underline underline-offset-4"
+              >
+                プライバシーポリシー
+              </Link>
+            </div>
           </motion.div>
         </div>
       </motion.div>

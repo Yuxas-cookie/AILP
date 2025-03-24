@@ -74,6 +74,14 @@ export function LegalPage() {
                 <td className="py-4 pr-4 align-top font-medium text-gray-900">受付時間</td>
                 <td className="py-4 text-gray-700">公式ラインにて24時間受け付けております</td>
               </tr>
+              <tr>
+                <td className="py-4 pr-4 align-top font-medium text-gray-900">運営統括責任者</td>
+                <td className="py-4 text-gray-700">片山弘</td>
+              </tr>
+              <tr>
+                <td className="py-4 pr-4 align-top font-medium text-gray-900">ホームページURL</td>
+                <td className="py-4 text-gray-700">https://www.aienger.net/</td>
+              </tr>
             </tbody>
           </table>
         </motion.div>
@@ -96,6 +104,12 @@ export function LegalPage() {
                 </td>
               </tr>
               <tr>
+                <td className="py-4 pr-4 align-top font-medium text-gray-900">支払時期</td>
+                <td className="py-4 text-gray-700">
+                  お申込み後、30日以内にお支払いをお願いいたします。
+                </td>
+              </tr>
+              <tr>
                 <td className="py-4 pr-4 align-top font-medium text-gray-900">サービス内容</td>
                 <td className="py-4 text-gray-700">
                   AIエンジニア育成プログラム<br />
@@ -109,6 +123,22 @@ export function LegalPage() {
               <tr>
                 <td className="py-4 pr-4 align-top font-medium text-gray-900">返品・キャンセル</td>
                 <td className="py-4 text-gray-700">契約後8日以内のクーリングオフ期間あり</td>
+              </tr>
+              <tr>
+                <td className="py-4 pr-4 align-top font-medium text-gray-900">商品引渡し時期</td>
+                <td className="py-4 text-gray-700">
+                  お支払いと契約書の確認後にすぐにサービスをご利用いただけます
+                </td>
+              </tr>
+              <tr>
+                <td className="py-4 pr-4 align-top font-medium text-gray-900">動作環境</td>
+                <td className="py-4 text-gray-700">
+                  <ul className="list-disc list-inside space-y-1">
+                    <li>インターネット接続環境</li>
+                    <li>Webブラウザ（Google Chrome推奨）</li>
+                    <li>Zoomアプリケーション</li>
+                  </ul>
+                </td>
               </tr>
             </tbody>
           </table>
