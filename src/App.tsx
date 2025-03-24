@@ -8,6 +8,7 @@ import { Features } from './components/Features';
 import { CTA } from './components/CTA';
 import { Pricing } from './components/Pricing';
 import { LegalPage } from './components/LegalPage';
+import { PrivacyPolicy } from './components/PrivacyPolicy';
 
 const fadeInUp = {
   initial: { opacity: 0, y: 20 },
@@ -61,6 +62,7 @@ function App() {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/legal" element={<LegalPage />} />
+        <Route path="/privacy" element={<PrivacyPolicy />} />
       </Routes>
     </Router>
   );
