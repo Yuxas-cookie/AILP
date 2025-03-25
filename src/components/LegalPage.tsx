@@ -68,7 +68,10 @@ export function LegalPage() {
               </tr>
               <tr>
                 <td className="py-4 pr-4 align-top font-medium text-gray-900">連絡先</td>
-                <td className="py-4 text-gray-700">sekaino.hiroshi34@gmail.com</td>
+                <td className="py-4 text-gray-700">
+                  電話番号：09036184320<br />
+                  メール：sekaino.hiroshi34@gmail.com
+                </td>
               </tr>
               <tr>
                 <td className="py-4 pr-4 align-top font-medium text-gray-900">受付時間</td>
